@@ -17,10 +17,10 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Developer
+title:                 SMPARK's Blog
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -48,11 +48,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             기술
+  - title:             Blog 
     url:               /example/
-  - title:             일상
+  - title:             SMPARK's Web Site
     url:               /docs/
-  - title:             소개
+  - title:             About
     url:               /about/
 
 # Add links to the footer.
