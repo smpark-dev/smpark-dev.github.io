@@ -50,8 +50,8 @@ author:
 menu:
   - title:             blog 
     url:               /example/
-  - title:             smpark's web site
-    url:               /docs/
+  - title:             web site
+    url:               https://smpark.dev
   - title:             about
     url:               /about/
 
