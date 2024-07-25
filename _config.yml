@@ -358,10 +358,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-social:
-  name:                <sangmin> <park>
-  links:
-    - https://github.com/smpark-dev
+# social:
+#   name:                <firstname> <lastname>
+#   links:
+#     - https://twitter.com/<username>
+#     - https://github.com/<username>
 
 
 # Plugin Configs
