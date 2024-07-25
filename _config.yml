@@ -20,7 +20,7 @@
 lang:                  ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 SMPARK's Blog
+title:                 smpark's blog
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -28,7 +28,7 @@ description:           >
   smpark's 기술 블로그 및 개인 블로그 입니다.
 
 # A shorter description for the sidebar.
-tagline:              <<-- 옆으로 밀기. <<--
+tagline:              <<-- swipe left <<--
 
 # A list of keywords for your blog
 keywords:              [frontend, backend, 프론트엔드, 백엔드, 웹, 개발자, React, NextJS, Developer, JavaScript, TypeScript, NodeJS, Web Developer, smpark]
@@ -48,11 +48,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Blog 
+  - title:             blog 
     url:               /example/
-  - title:             SMPARK's Web Site
+  - title:             smpark's web site
     url:               /docs/
-  - title:             About
+  - title:             about
     url:               /about/
 
 # Add links to the footer.
