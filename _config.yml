@@ -52,7 +52,7 @@ menu:
     url:               /blog/
   - title:             about
     url:               /about/
-  - title:             website
+  - title:             "@website"
     url:               https://smpark.dev
 
 # Add links to the footer.
