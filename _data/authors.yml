@@ -8,8 +8,8 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    나는 웹 개발자야, 그리고 여기는 나의 기술 블로그, 개발을 하면서 정리가 필요하다고 생각하는 부분, 어려웠던 부분, 
-    다른 이에게 도움이 될 수 있는 부분을 기술해 남겨 놓으려해. 서로에게 도움이 되었으면 좋겠어. 
+    웹 개발을 하면서 정리가 필요하다고 생각하는 부분, 어려웠던 부분, 
+    다른 이에게 도움이 될 수 있는 부분을 기술해 남겨 놓으려 만들었어요. 서로에게 도움이 되었으면 좋겠습니다. 
     
     *<span style="color: gray;">우리는 홀로 빛나면서도 모두가 연결된 하나의 존재이다.</span>*
 
