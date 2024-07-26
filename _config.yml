@@ -53,8 +53,7 @@ menu:
   - title:             about
     url:               /about/
   - title:             website
-    url:               https://smpark.dev
-    external:          true
+    url:               '<a href="https://smpark.dev" target="_blank" rel="noopener noreferrer">website</a>'
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
