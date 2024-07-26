@@ -48,13 +48,18 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             posts 
-    url:               /posts/
+  - title:             blog 
+    url:               /blog/
   - title:             about
     url:               /about/
   - title:             website
     url:               https://smpark.dev
 
+
+links:
+  blog:
+    title: blog
+    url: /blog/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
@@ -73,7 +78,7 @@ permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /:num/
+paginate_path:         /blog/:num/
 
 
 # Theme
@@ -333,7 +338,6 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
-
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------

@@ -72,7 +72,7 @@ accent_color: rgb(79,177,186)
 이 값들은 페이지별로 덮어쓸 수 있으며, 각 페이지에 독특한 외관을 만들 수 있습니다.
 또한 [프론트 매터 기본값][fmd]을 통해 카테고리의 모든 게시물에 특정 외관을 적용할 수 있습니다. 예를 들어:
 
-```yml
+~~~yml
 # 파일: `_config.yml`
 defaults:
   - scope:
@@ -80,3 +80,133 @@ defaults:
     values:
       accent_image: /assets/img/hydejack-bg.jpg
       accent_color: rgb(38,139,210)
+~~~
+
+### 테마 색상
+Hydejack은 `theme_color` 속성도 지원합니다. 설정하면 사이드바의 배경색이 변경되며, [웹 앱 매니페스트][wam]에서 `theme_color` 속성이 설정됩니다. 일부 브라우저(예: 안드로이드의 Chrome)에서는 브라우저의 UI 구성 요소 색상이 변경됩니다.
+
+~~~yml
+# 파일: `_config.yml`
+theme_color:  rgb(25,55,71)
+~~~
+
+`accent_*` 속성과 마찬가지로, 테마 색상은 프론트 매터에서 설정하여 페이지별로 덮어쓸 수 있습니다.
+
+[wam]: https://web.dev/add-manifest/#theme-color
+
+## 글꼴 변경
+Hydejack은 일반 텍스트와 헤드라인의 글꼴을 설정할 수 있으며, Google Fonts에 대한 기본 지원을 제공합니다.
+`_config.yml`에는 `font`, `font_heading` 및 `google_fonts`라는 세 가지 키가 있습니다.
+기본값은 다음과 같습니다:
+
+~~~yml
+# 파일: `_config.yml`
+font:         Noto Sans, Helvetica, Arial, sans-serif
+font_heading: Roboto Slab, Helvetica, Arial, sans-serif
+google_fonts: Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+~~~
+
+`font` 및 `font_heading`는 유효한 CSS `font-family` 값이어야 합니다. Google Fonts를 사용할 때는 최소한 하나의 대체 글꼴을 제공하세요.
+
+`google_fonts` 키는 Google에서 글꼴을 가져오는 데 필요한 문자열입니다.
+[Google Fonts](https://fonts.google.com)에서 하나 이상의 글꼴을 선택한 후 다운로드 페이지에서 얻을 수 있습니다:
+
+![google_fonts 문자열을 얻는 위치](../assets/img/docs/google-fonts.png){:width="600" height="398" loading="lazy"}
+
+### Google Fonts 제거
+Google Fonts를 사용하지 않으려면, `google_fonts` 키를 `false`로 설정하여 관련된 모든 코드를 사이트에서 제거할 수 있습니다.
+
+`no_google_fonts` 매개변수는 v9에서 제거되었으며 더 이상 효과가 없습니다.
+{:.note}
+
+## 블로그 레이아웃 선택
+Hydejack에는 블로그 게시물을 표시하는 세 가지 레이아웃이 있습니다.
+
+* [`list` 레이아웃][posts]은 제목만 표시하고 게시물을 연도별로 그룹화합니다.
+* [`grid` 레이아웃][grid]\*은 PRO 버전에서만 사용할 수 있으며, 각 게시물에 대한 콘텐츠 카드(`image`)를 표시합니다.
+* [`blog` 레이아웃][blog]은 전통적인 페이지네이션 레이아웃이며 각 게시물의 제목과 요약을 표시합니다.
+
+[blog]: https://hydejack.com/blog/
+[posts]: https://hydejack.com/posts/
+[grid]: https://hydejack.com/blog/hydejack/
+
+`list` 또는 `grid` 레이아웃을 사용하려면 새 마크다운 파일에 다음 프론트 매터를 추가하세요:
+
+~~~yml
+---
+layout: list # 또는 `grid`
+title:  Home
+---
+~~~
+
+`blog` 레이아웃을 사용하려면 `Gemfile`에 `jekyll-paginate`를 추가하고 설정 파일의 `plugins` 목록에 추가해야 합니다:
+
+~~~ruby
+# 파일: `Gemfile`
+gem "jekyll-paginate"
+~~~
+
+~~~yml
+# 파일: `_config.yml`
+plugins:
+  - jekyll-paginate
+~~~
+
+설정 파일에 `paginate` 및 `paginate_path` 키도 추가해야 합니다. 예를 들어:
+
+~~~yml
+# 파일: `_config.yml`
+paginate:      10
+paginate_path: '/:num/'
+~~~
+
+`blog` 레이아웃은 `.html` 파일 확장자를 가진 파일에 적용되어야 하며,
+`paginate_path`는 `index.html` 파일 경로와 일치해야 합니다.
+위의 `paginate_path`와 일치시키려면 다음 프론트 매터가 포함된 `index.html`을 루트 디렉토리에 넣으세요:
+
+~~~yml
+# 파일: `index.html`
+---
+layout: blog
+title: Blog
+---
+~~~
+
+자세한 내용은 [Pagination](https://jekyllrb.com/docs/pagination/)을 참조하세요.
+
+### 하위 디렉토리에서 `blog` 레이아웃 사용
+`/my-blog/`와 같은 URL에서 블로그 레이아웃을 사용하려면 다음 폴더 구조를 만드세요:
+
+~~~
+├── my-blog
+│   └── index.html
+└── _config.yml
+~~~
+
+이전과 동일한 `index.html`을 사용하고 하위 디렉토리에 넣으세요.
+
+~~~yml
+# 파일: `my-blog/index.html`
+---
+layout: blog
+title: Blog
+---
+~~~
+
+설정 파일에서 `paginate_path`가 하위 디렉토리 이름과 일치하는지 확인하세요:
+
+~~~yml
+# 파일: `_config.yml`
+paginate:      10
+paginate_path: /my-blog/:num/ #!!
+~~~
+
+사이드바에 블로그 디렉토리에 대한 링크를 추가하려면 `_config.yml` 파일의 `links` 섹션에 다음을 추가하세요:
+
+~~~yml
+# 파일: `_config.yml`
+links:
+  my_blog:
+    title: My Blog
+    url: /my-blog/
+~~~
