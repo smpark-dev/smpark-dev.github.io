@@ -49,23 +49,23 @@ cookies_banner:
   okay:                Okay
 
 not_found:
-  title:               '404: Page Not Found'
+  title:               '404: 페이지를 찾을 수 없습니다'
   message:             |
-    Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
-    <!--home_link--> to try finding it again.
-  home_link:           Head back home
+    죄송합니다. 해당 URL이 잘못되었거나 존재하지 않는 페이지를 가리키고 있습니다.
+    <!--home_link-->로 돌아가서 다른 페이지를 찾아보세요.
+  home_link:           홈으로 돌아가기
 
 offline:
-  title:               'You are Offline'
+  title:               '오프라인 상태입니다'
   message:             |
-    Sorry, but you appear to be offline and this page has not been prepared for offline viewing.
-    <!--home_link--> to try finding another page.
-  home_link:           Head back home
+    죄송합니다. 현재 오프라인 상태이며 이 페이지는 오프라인 보기를 위해 준비되지 않았습니다.
+    <!--home_link-->로 돌아가서 다른 페이지를 찾아보세요.
+  home_link:           홈으로 돌아가기
 
 error:
-  title:               Error
+  title:               오류
   message:             |
-    Sorry, an error occurred while loading <!--link-->.
+    죄송합니다. <!--link-->를 불러오는 동안 오류가 발생했습니다.
 
 # Separators
 # ---------------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ breadcrumbs_separator: '/'
 # Date formats
 # ---------------------------------------------------------------------------------------
 date_formats:
-  post:                '%d %b %Y'
+  post:                '%Y %n %d'
   last_modified_at:    '%Y-%m-%d'
   related_post:        '%d %b %Y'
   list_group_by:       '%Y'
