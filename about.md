@@ -14,7 +14,7 @@ hide_description: true
 # About
 
 <!--author-->
-- **웹사이트**: [smpark.dev(공사중..)]{:.external}
+- **웹사이트**: (공사중..)
 - **MBTI**: ISFJ
 - **생일**: 12월 26일
 - **별자리**: 염소자리
