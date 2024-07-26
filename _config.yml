@@ -52,8 +52,8 @@ menu:
     url:               /
   - title:             about
     url:               /about/
-  - title:             website
-    url:               https://smpark.dev
+  - title:             website(공사중..)
+    url:               /
     class:             external
 
 # Add links to the footer.
