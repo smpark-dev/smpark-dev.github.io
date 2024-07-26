@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+# url:                   https://smpark-dev.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -48,11 +48,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             blog 
-    url:               //
+  - title:             posts 
+    url:               /posts/
   - title:             about
     url:               /about/
-  - title:             "@website"
+  - title:             website
     url:               https://smpark.dev
 
 # Add links to the footer.
