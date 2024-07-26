@@ -18,7 +18,7 @@ NX 모노레포를 도입하면서 기존 프로젝트를 마이그레이션하�
 
 Node.js의 npm과 yarn 같은 패키지 매니저들은 기본적으로 패키지 호이스팅을 수행합니다:
 
-- <span style="color: #4CAF50;">**장점**</span>: 'node_modules'의 공통 의존성을 디렉토리 상위로 이동시켜 중복 설치를 방지
+- <span style="color: #4CAF50;">**장점**</span>: node_modules의 공통 의존성을 디렉토리 상위로 이동시켜 중복 설치를 방지
 - <span style="color: #F44336;">**단점**</span>: 버전 충돌 가능성과 유령 의존성 문제 발생 가능
 > <small style="background-color: #FFFDE7; padding: 2px 5px; border-radius: 3px;">유령 의존성이란 package.json에 명시되지 않은 패키지를 사용할 수 있게 되는 문제</small>
 
