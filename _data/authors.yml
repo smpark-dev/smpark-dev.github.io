@@ -8,13 +8,12 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    나는 웹 개발자야, 그리고 여기는 나의 기술 블로그, 개발을 하면서 정리가 필요하다고 생각하는 부분, 어려웠던 부분, 
+    다른 이에게 도움이 될 수 있는 부분을 기술해 남겨 놓으려해. 서로에게 도움이 되었으면 좋겠어. 
     
-    Open `_data/authors.yml` to edit this text.
+    *<span style="color: gray;">우리는 홀로 빛나면서도 모두가 연결된 하나의 존재이다.</span>*
 
-  # This photo will be used in the about section
+  # This photo will be used in the about sectionV
   picture:
     path:            https://via.placeholder.com/128x128
     # srcset is optional, but can be used to provide higher res versions for retina displays
