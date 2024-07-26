@@ -135,11 +135,11 @@ defaults:
       layout:          plain
       sitemap:         false
 
-  # You can use the following to enable comments on all posts.
-  - scope:
-      type:            posts
-    values:
-      comments:        true
+  # # You can use the following to enable comments on all posts.
+  # - scope:
+  #     type:            posts
+  #   values:
+  #     comments:        true
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
@@ -254,7 +254,7 @@ hydejack:
 
   # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
   # Note that this setting has no effect when using the free version.
-  advertise:           false
+  advertise:           true
 
   # Buyers of the PRO version can opt to hide all dates from the theme.
   # Frequent consumers of online content will know that nothing devalues a post like
