@@ -65,7 +65,7 @@ oauth2.0-dev_1.0.0  | for your current platform.
 
 이 에러는 <span style="color: #FF5722;">Docker 환경(Linux)에 필요한 `@esbuild/linux-arm64` 패키지가 없어서</span> 발생했습니다. 로컬 환경(Mac)에는 `@esbuild-darwin-arm64`만 설치되어 있었기 때문입니다. 
 
-Zero Install이 아닌 경우는 `yarn install` 명령어를 통해 의존성을 새로 설치하지만 <span style="color: #2196F3; font-weight: bold;">Zero Install은 로컬에 설치된 의존성을 그대로 가져가기 때문에</span> 도커 환경에서 필요한 패키지가 누락되는 문제가 발생했습니다.
+Zero Install이 아닌 경우는 `yarn install` 명령어를 통해 의존성을 새로 설치하지만 <span style="color: #2196F3; font-weight: bold;">Zero Install은 로컬에 설치된 의존성을 그대로 가져가기 때문에</span> 도커 환경에서 <span style="color: #FF5722;">필요한 패키지가 누락</span>되는 문제가 발생했습니다.
 
 Zero Install의 이점을 유지하면서 문제를 해결하기 위해, 로컬 환경에 Docker에서 필요한 운영체제용 패키지도 함께 설치하는 방법을 선택했습니다. `.yarnrc.yml` 파일에 다음 설정을 추가했습니다:
 
@@ -80,7 +80,7 @@ supportedArchitectures:
 yarn install
 ```
 
-이 설정으로 두 가지 운영체제(Mac, Linux) arm64 아키텍처에 따라 바이너리를 모두 로컬에 설치할 수 있게 되었습니다. `yarn install` 명령을 실행한 후, `.yarn/unplugged` 디렉토리에 Linux 바이너리가 설치된 것을 확인할 수 있었습니다.
+이 설정으로 두 가지 운영체제(Mac, Linux) arm64 아키텍처에 따른 바이너리를 모두 로컬에 설치할 수 있게 되었습니다. `yarn install` 명령을 실행한 후, `.yarn/unplugged` 디렉토리에 Linux 바이너리가 설치된 것을 확인할 수 있었습니다.
 
 ## <span style="color: #009688;">주의사항</span>
 
