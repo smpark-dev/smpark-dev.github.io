@@ -48,20 +48,20 @@ author:
 
 # Add links to the sidebar.
 menu:
+  - title:             home
+    url:               /
+  - title:             postList
+    url:               /post-list/
+
+  - title:             
+    url:               /
+
   - title:             devLog
     url:               /dev-log/
   - title:             debugLog
     url:               /debug-log/
   - title:             knowledgeLog
     url:               /knowledge-log/
-
-  - title:             
-    url:               /
-
-  - title:             home
-    url:               /
-  - title:             postList
-    url:               /post-list/
 
   - title:             
     url:               /
