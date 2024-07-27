@@ -17,7 +17,7 @@ url:                   https://smpark-dev.github.io
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  ko- jekyll-sitemap
+lang:                  ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 smpark's blog
@@ -50,6 +50,8 @@ author:
 menu:
   - title:             blog 
     url:               /
+  - title :            posts
+    url:               /posts/
   - title:             about
     url:               /about/
   - title:             website(공사중..)
