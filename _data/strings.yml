@@ -69,15 +69,15 @@ error:
 
 # Separators
 # ---------------------------------------------------------------------------------------
-posted:                'Posted'
+posted:                'Posted on'
 last_modified_at:      'Last modified at'
 last_modified_at_icon: 'icon-history'
 colon:                 ':'
 separator:             '\n'
 category_start:        'in '
 category_spearator:    ' / '
-tag_start:             'Tag : '
-tag_separator:         ', '
+tag_start:             '\nTags: '
+tag_separator:         ' | '
 from_to_separator:     '–'
 breadcrumbs_home:      'home'
 breadcrumbs_separator: '/'
