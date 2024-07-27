@@ -56,7 +56,6 @@ menu:
     url:               /about/
   - title:             website(공사중..)
     url:               /
-    class:             external
 
 favicon: /assets/icons/favicon.ico
 # Add links to the footer.
