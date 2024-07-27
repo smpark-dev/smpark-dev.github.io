@@ -78,18 +78,18 @@ permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         :num/
+paginate_path:         debug-log:num/
 
 links:
   dev-log:
     title: Dev Log
     url: /dev-log/
   debug-log:
-      title: Debug Log
-      url: /debug-log/
+    title: Debug Log
+    url: /debug-log/
   debug-log:
-      title: Knowledge Log
-      url: /knowledge-log/
+    title: Knowledge Log
+    url: /knowledge-log/
 # Theme
 # ---------------------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Blog
+title: Debug Log
 description: "디버그 기록"
 slug: debug-log
 ---
