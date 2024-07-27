@@ -7,6 +7,7 @@ sitemap: false
 hide_last_modified: false
 tags: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
 keywords: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
+image: /assets/img/logo.png
 ---
 
 # <span style="color: #0066cc;">NX 모노레포에서 Yarn Berry PnP 적용하기</span>

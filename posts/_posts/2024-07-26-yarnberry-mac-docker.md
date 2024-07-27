@@ -7,6 +7,7 @@ sitemap: false
 hide_last_modified: false
 tags: [Yarn Berry, PnP, Zero Install, Docker, Mac, Cross-Platform Development]
 keywords: [Yarn Berry, PnP, Zero Install, Docker, Mac, Cross-Platform Development]
+image: /assets/img/logo.png
 ---
 
 # <span style="color: #0066cc;">Yarn Berry PnP Zero Install과 Docker 환경 동기화</span>
