@@ -9,7 +9,7 @@ tags: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
 keywords: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
 ---
 
-# <span style="color: #0066cc;">NX 모노레포에서 Yarn Berry PnP 적용하기</span>
+# <span style="color: #0066cc;">NX에서 Yarn Berry PnP 적용 시 패키지 문제 해결</span>
 
 NX 모노레포를 도입하면서 기존 프로젝트를 마이그레이션하는 과정에서, `root/package.json`을 공통으로 두고 각 프로젝트의 `package.json`을 서브로 설정하기로 했습니다. 이 과정에서 모든 프로젝트가 루트의 Yarn Berry PnP를 바라보게 하는 과정에서 생긴 이슈와 그 해결 과정을 기술 하였습니다.
 
