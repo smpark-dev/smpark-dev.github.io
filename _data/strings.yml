@@ -89,9 +89,9 @@ breadcrumbs_separator: '/'
 date_formats:
   post:                '%Y-%m-%d'  # 날짜 형식 변경
   last_modified_at:    '%Y-%m-%d'
-  related_post:        '%d %b %Y'
+  related_post:        '%Y-%m-%d'
   list_group_by:       '%Y'
-  list_entry:          '%d %b'
+  list_entry:          '%Y-%m-%d'
   project:             '%Y'
   projects_group_by:   '%Y'
   resume:              '%b %Y'
