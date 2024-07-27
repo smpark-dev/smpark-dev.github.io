@@ -48,13 +48,15 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title :            posts
-    url:               /
-  - title:             blog 
-    url:               /blog/
+  - title:             DevLog
+    url:               /dev-log/
+  - title :            DebugLog
+    url:               /debug-log/
+  - title :            KnowledgeLog
+    url:               /knowledge-log/
   - title:             about
     url:               /about/
-  - title:             website(공사중..)
+  - title:             smpark space(공사중..)
     url:               /
 
 favicon: /assets/icons/favicon.ico
