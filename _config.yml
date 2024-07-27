@@ -81,16 +81,16 @@ paginate:              10
 paginate_path:         :num/
 
 
-links:
-  dev-log:
-    title: Dev Log
-    url: /dev-log/
-  debug-log:
-    title: Debug Log
-    url: /debug-log/
-  debug-log:
-    title: Knowledge Log
-    url: /knowledge-log/
+# links:
+#   dev-log:
+#     title: Dev Log
+#     url: /dev-log/
+#   debug-log:
+#     title: Debug Log
+#     url: /debug-log/
+#   debug-log:
+#     title: Knowledge Log
+#     url: /knowledge-log/
 # Theme
 # ---------------------------------------------------------------------------------------
 
