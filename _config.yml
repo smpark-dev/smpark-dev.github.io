@@ -78,7 +78,7 @@ permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         debug-log:num/
+paginate_path:         /debug-log/:num/
 
 links:
   dev-log:
