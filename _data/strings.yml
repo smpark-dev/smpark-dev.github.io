@@ -69,23 +69,25 @@ error:
 
 # Separators
 # ---------------------------------------------------------------------------------------
-posted:                'Posted'
+posted:                ''  # 빈 문자열로 변경
 last_modified_at:      'Last modified at'
 last_modified_at_icon: 'icon-history'
-colon:                 ':'
-separator:             '|'
-category_start:        'in '
+colon:                 ''  # 콜론 제거
+separator:             ' | '  # 앞뒤로 공백 추가
+category_start:        ''  # 'in ' 제거
 category_spearator:    ' / '
-tag_start:             'on '
+tag_start:             'Tags: '  # 'on '을 'Tags: '로 변경
 tag_separator:         ', '
 from_to_separator:     '–'
 breadcrumbs_home:      'home'
 breadcrumbs_separator: '/'
 
+
+
 # Date formats
 # ---------------------------------------------------------------------------------------
 date_formats:
-  post:                '%Y %m %d'
+  post:                '%Y-%m-%d'  # 날짜 형식 변경
   last_modified_at:    '%Y-%m-%d'
   related_post:        '%d %b %Y'
   list_group_by:       '%Y'
@@ -93,7 +95,6 @@ date_formats:
   project:             '%Y'
   projects_group_by:   '%Y'
   resume:              '%b %Y'
-
 
 # PRO Version
 # ---------------------------------------------------------------------------------------
