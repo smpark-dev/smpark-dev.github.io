@@ -77,8 +77,8 @@ copyright:             © 2024. All rights reserved.
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              10
-paginate_path:         /debug-log/:num/
+# paginate:              10
+# paginate_path:         /debug-log/:num/
 paginate:              10
 paginate_path:         /dev-log/:num/
 
