@@ -25,7 +25,7 @@ title:                 smpark's blog
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  smpark's 기술 블로그 및 개인 블로그 입니다.
+  smpark's develop 블로그 입니다.
 
 # A shorter description for the sidebar.
 tagline:              <<-- swipe left <<--
@@ -48,15 +48,30 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             DevLog
-    url:               /dev-log/
-  - title :            DebugLog
-    url:               /debug-log/
-  - title :            KnowledgeLog
-    url:               /knowledge-log/
+  - title:             home
+    url:               /
   - title:             about
     url:               /about/
-  - title:             smpark space(공사중..)
+
+  - title:             
+    url:               /
+  
+  - title:             devLog
+    url:               /dev-log/
+  - title:             debugLog
+    url:               /debug-log/
+  - title:             knowledgeLog
+    url:               /knowledge-log/
+
+  - title:             
+    url:               /
+
+  - title:             postList
+    url:               /post-list/
+
+  - title:             
+    url:               /
+  - title:             website
     url:               /
 
 favicon: /assets/icons/favicon.ico
