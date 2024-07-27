@@ -48,10 +48,10 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             blog 
-    url:               /blog/
   - title :            posts
     url:               /
+  - title:             blog 
+    url:               /blog/
   - title:             about
     url:               /about/
   - title:             website(공사중..)
