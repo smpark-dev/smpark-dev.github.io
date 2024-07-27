@@ -57,7 +57,8 @@ menu:
   - title:             website(공사중..)
     url:               /
     class:             external
-
+    
+favicon: /assets/icons/favicon.png
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 # legal:
