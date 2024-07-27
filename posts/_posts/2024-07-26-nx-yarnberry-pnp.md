@@ -4,8 +4,8 @@ title: NX에서 Yarn Berry PnP 적용 시 패키지 문제 해결
 description: >
   NX 모노레포를 적용하는 과정에서 node-modules가 아닌 pnp를 적용시 패키지가 호이스팅 되지 않아 생긴 문제를 해결하는 포스팅
 sitemap: false
-hide_last_modified: false
-tags: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
+hide_last_modified: true
+tags: [`NX`, `Yarn Berry`, `PnP`, `모노레포`, `TypeScript`]
 ---
 
 # <span style="color: #0066cc;">NX 모노레포에서 Yarn Berry PnP 적용하기</span>
