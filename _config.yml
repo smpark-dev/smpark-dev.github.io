@@ -48,14 +48,6 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             home
-    url:               /
-  - title:             about
-    url:               /about/
-
-  - title:             
-    url:               /
-  
   - title:             devLog
     url:               /dev-log/
   - title:             debugLog
@@ -71,6 +63,10 @@ menu:
 
   - title:             
     url:               /
+  - title:             home
+    url:               /
+  - title:             about
+    url:               /about/
   - title:             website
     url:               /
 
