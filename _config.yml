@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://smpark-dev.github.io
+url:                   https://smpark-dev.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -77,10 +77,8 @@ copyright:             © 2024. All rights reserved.
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-# paginate:              10
-# paginate_path:         /debug-log/:num/
 paginate:              10
-paginate_path:         /dev-log/:num/
+paginate_path:         :num/
 
 
 links:
