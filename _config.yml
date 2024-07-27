@@ -49,9 +49,9 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             blog 
-    url:               /
+    url:               /blog/
   - title :            posts
-    url:               /posts/
+    url:               /
   - title:             about
     url:               /about/
   - title:             website(공사중..)
