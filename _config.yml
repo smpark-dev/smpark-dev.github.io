@@ -58,13 +58,14 @@ menu:
   - title:             
     url:               /
 
+  - title:             home
+    url:               /
   - title:             postList
     url:               /post-list/
 
   - title:             
     url:               /
-  - title:             home
-    url:               /
+    
   - title:             about
     url:               /about/
   - title:             website
