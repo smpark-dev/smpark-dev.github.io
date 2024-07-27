@@ -76,7 +76,7 @@ colon:                 ''  # 콜론 제거
 separator:             ' | '  # 앞뒤로 공백 추가
 category_start:        ' | '  # 'in ' 제거
 category_spearator:    ' / '
-tag_start:             '| Tags: '  # 'on '을 'Tags: '로 변경
+tag_start:             '| '  # 'on '을 'Tags: '로 변경
 tag_separator:         ', '
 from_to_separator:     '–'
 breadcrumbs_home:      'home'
