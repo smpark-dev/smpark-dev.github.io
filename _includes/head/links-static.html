@@ -1,7 +1,9 @@
 {% if plugins contains 'jekyll-feed' %}{% include head/feed-tag.html %}{% endif %}
-
-<link rel="shortcut icon"    href="{{ site.favicon          | default:'/assets/icons/favicon.ico'       | relative_url }}">
-<link rel="apple-touch-icon" href="{{ site.apple_touch_icon | default:'/assets/icons/icon-192x192.png'  | relative_url }}">
+<link rel="shortcut icon" href="{% if site.favicon %}{{ site.favicon | relative_url }}{% else %}{{ '/assets/icons/favicon.ico' | relative_url }}{% endif %}">
+<link rel="icon" type="image/png" href="{{ '/assets/icons/favicon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/icon-72x72.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/icon-72x72.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ site.apple_touch_icon | default:'/assets/icons/icon-192x192.png' | relative_url }}">
 
 <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
 
@@ -29,3 +31,7 @@
 {% if disqus %}
 <link rel="dns-prefetch" href="https://{{ disqus }}.disqus.com" id="_hrefDisqus">
 {% endif %}
+
+<meta name="theme-color" content="{{ site.theme_color | default:site.accent_color | default:'rgb(8,46,57)' }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
