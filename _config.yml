@@ -69,7 +69,6 @@ menu:
   - title:             Website
     url:               /
 
-favicon: /assets/icons/favicon.ico
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 # legal:
