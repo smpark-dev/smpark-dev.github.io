@@ -4,6 +4,7 @@ title: Yarn Berry PnP에서 Mac과 Docker 환경 동기화
 description: >
   Docker를 통해 Yarn Berry(PnP) Zero Install을 구현하는 과정에서 발생한 환경 불일치 문제 해결 방법
 sitemap: true
+image: /assets/img/me@2x.jpg
 hide_last_modified: false
 tags: [Yarn Berry, PnP, Zero Install, Docker, Mac, Cross-Platform Development]
 keywords: [Yarn Berry, PnP, Zero Install, Docker, Mac, Cross-Platform Development]
