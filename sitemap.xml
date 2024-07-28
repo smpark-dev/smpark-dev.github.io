@@ -13,17 +13,4 @@ layout: null
     </url>
     {% endif %}
   {% endfor %}
-  
-  {% assign important_pages = "/,/about/" | split: "," %}
-  {% for page_url in important_pages %}
-    {% assign page = site.pages | where: "url", page_url | first %}
-    {% if page and page.sitemap != false %}
-    <url>
-      <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.3</priority>
-    </url>
-    {% endif %}
-  {% endfor %}
 </urlset>
