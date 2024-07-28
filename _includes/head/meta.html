@@ -2,7 +2,7 @@
   <meta name="robots" content="noindex">
 {% endif %}
 
-{% if page.image %}
+{% if site.defaults[0].values.image %}
   <meta property="og:image" content="{{ site.url }}{{ site.defaults[0].values.image }}">
 {% else %}
   <meta property="og:image" content="{{ site.url }}{{ page.og_image }}">
