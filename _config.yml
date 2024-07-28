@@ -17,7 +17,7 @@ url:                   https://smpark-dev.github.io
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  ko
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 SmPark's Blog
@@ -434,4 +434,6 @@ jekyll_compose:
         path: /assets/img/sidebar-bg.jpg
       links:
         - title: Project Link
-          url: https://example.com
+          url: https://example.
+          
+apple_touch_icon: /assets/icons/icon-512x512.png
