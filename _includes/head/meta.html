@@ -5,7 +5,7 @@
 {% if page.image %}
   <meta property="og:image" content="{{ page.image | absolute_url }}">
 {% else %}
-  <meta property="og:image" content="{{ site.defaults.image | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/img/me@2x.jpg' | absolute_url }}">
 {% endif %}
 
 {% unless page.redirect %}

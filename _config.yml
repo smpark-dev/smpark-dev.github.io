@@ -127,7 +127,6 @@ font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 defaults:
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
-  image:           /assets/img/me@2x.jpg
   - scope:
       path:            hyde/
     values:
