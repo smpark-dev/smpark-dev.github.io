@@ -69,10 +69,10 @@ error:
 
 # Separators
 # ---------------------------------------------------------------------------------------
-posted:                ''  # 빈 문자열로 변경
+posted:                'Posted'  # 빈 문자열로 변경
 last_modified_at:      'Last modified at'
 last_modified_at_icon: 'icon-history'
-colon:                 ''  # 콜론 제거
+colon:                 ':'  # 콜론 제거
 separator:             ' | '  # 앞뒤로 공백 추가
 category_start:        ' | '  # 'in ' 제거
 category_spearator:    ' / '
