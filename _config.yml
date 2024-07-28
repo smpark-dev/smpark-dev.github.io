@@ -20,7 +20,7 @@ url:                   https://smpark-dev.github.io
 lang:                  ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 smpark's blog
+title:                 SmPark's Blog
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -48,27 +48,25 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             home
-    url:               /
-  - title:             postList
-    url:               /post-list/
+  - title:             Index
+    url:               /index/
 
   - title:             
     url:               /
 
-  - title:             devLog
-    url:               /dev-log/
-  - title:             debugLog
-    url:               /debug-log/
-  - title:             knowledgeLog
-    url:               /knowledge-log/
+  - title:             Dev
+    url:               /dev/
+  - title:             Debug
+    url:               /debug/
+  - title:             Knowledge
+    url:               /knowledge/
 
   - title:             
     url:               /
     
-  - title:             about
+  - title:             About
     url:               /about/
-  - title:             website
+  - title:             Website
     url:               /
 
 favicon: /assets/icons/favicon.ico
