@@ -144,9 +144,19 @@ defaults:
       sitemap:         false
 
   - scope:
-      path:            licenses/
+      path:            "licenses/"
     values:
       layout:          plain
+      sitemap:         false
+
+  # 추가적인 제외 항목 설정
+  - scope:
+      path:            "google*.html"
+    values:
+      sitemap:         false
+  - scope:
+      path:            "naver*.html"
+    values:
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
