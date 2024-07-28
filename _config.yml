@@ -37,6 +37,7 @@ keywords:              [frontend, backend, web, React, NextJS, Developer, JavaSc
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/img/logo.png
+og_image:              /assets/img/me@2x.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -437,4 +438,4 @@ jekyll_compose:
           url: https://example.
           
 apple_touch_icon: /assets/icons/icon-512x512.png
-og_image: /assets/icons/icon-512x512.png
+# og_image: /assets/icons/icon-512x512.png
