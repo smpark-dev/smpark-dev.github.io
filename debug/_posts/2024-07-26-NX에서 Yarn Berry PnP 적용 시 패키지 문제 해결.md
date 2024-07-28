@@ -15,7 +15,7 @@ NX 모노레포를 도입하면서 기존 프로젝트를 마이그레이션하�
 
 > <small style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px;">사용 버전: yarn-4.3.1.cjs, nx-19.5.3</small>
 
-## <span style="color: #009688;">패키지 호이스팅의 이해</span>
+## <span style="color: #268BD2;">패키지 호이스팅의 이해</span>
 
 Node.js의 npm과 yarn 같은 패키지 매니저들은 기본적으로 패키지 호이스팅을 수행합니다:
 
@@ -23,7 +23,7 @@ Node.js의 npm과 yarn 같은 패키지 매니저들은 기본적으로 패키�
 - <span style="color: #F44336;">**단점**</span>: 버전 충돌 가능성과 유령 의존성 문제 발생 가능
 > <small style="background-color: #FFFDE7; padding: 2px 5px; border-radius: 3px;">유령 의존성이란 package.json에 명시되지 않은 패키지를 사용할 수 있게 되는 문제</small>
 
-## <span style="color: #009688;">PnP(Plug'n'Play) 방식의 특징</span>
+## <span style="color: #268BD2;">PnP(Plug'n'Play) 방식의 특징</span>
 
 PnP 방식은 호이스팅을 사용하지 않고 다음과 같은 특징을 가집니다:
 
@@ -32,21 +32,21 @@ PnP 방식은 호이스팅을 사용하지 않고 다음과 같은 특징을 가
 - 모듈 위치 즉시 파악으로 인한 빠른 속도
 - 중앙 캐시 사용으로 설치 및 빌드 시간 대폭 감소
 
-## <span style="color: #009688;">문제 상황</span>
+## <span style="color: #268BD2;">문제 상황</span>
 
 NX 모노레포에 PnP 방식을 적용하여 TypeScript를 공통(root) 패키지에 두고, 서브 패키지에는 TypeScript를 명시하지 않으려 했으나, <span style="color: #F44336;">호이스팅 방식이 아니어서 서브 패키지에서 TypeScript를 찾지 못하는 문제</span>가 발생했습니다.
 
-## <span style="color: #009688;">해결 방법: Yarn Berry의 제약 조건 시스템 활용</span>
+## <span style="color: #268BD2;">해결 방법: Yarn Berry의 제약 조건 시스템 활용</span>
 
 Yarn Berry의 제약 조건(constraints) 시스템을 사용하여 Prolog 스크립트로 문제를 해결했습니다.
 
-### <span style="color: #00796B;">스크립트의 목적</span>
+### <span style="color: #f35f2c;">스크립트의 목적</span>
 1. 모노레포 내 모든 프로젝트의 TypeScript 버전 일관성 유지
 2. 루트 프로젝트에서 버전을 한 번만 정의하고 모든 서브 프로젝트에 자동 적용
 3. TypeScript를 항상 개발 의존성(devDependencies)으로 처리
 4. <span style="color: #FFA000;">다만, 이 방식은 `모든 서브프로젝트에 동일한 버전의 공통 패키지가 강제`된다는 점에 유의해야 합니다.</span>
 
-### <span style="color: #00796B;">적용 방법</span>
+### <span style="color: #f35f2c;">적용 방법</span>
 
 1. root에 `constraints.pro` 파일 생성 및 코드 삽입:
 

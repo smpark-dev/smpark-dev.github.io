@@ -31,7 +31,7 @@ description:           >
 tagline:              <<-- swipe left <<--
 
 # A list of keywords for your blog
-keywords:              [frontend, backend, 프론트엔드, 백엔드, 웹, 개발자, React, NextJS, Developer, JavaScript, TypeScript, NodeJS, Web Developer, smpark]
+keywords:              [frontend, backend, web, React, NextJS, Developer, JavaScript, TypeScript, NodeJS, Web Developer, smpark]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -91,16 +91,6 @@ paginate:              10
 paginate_path:         :num/
 
 
-# links:
-#   dev-log:
-#     title: Dev Log
-#     url: /dev-log/
-#   debug-log:
-#     title: Debug Log
-#     url: /debug-log/
-#   Knowledge-log:
-#     title: Knowledge Log
-#     url: /knowledge-log/
 # Theme
 # ---------------------------------------------------------------------------------------
 
@@ -113,12 +103,12 @@ remote_theme: hydecorp/hydejack@v9
  
 # Sidebar image and theme color of the site.
 accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          rgb(79,177,186)
+accent_color:          rgb(243, 95, 44)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(25,55,71)
+theme_color:           rgb(243, 95, 44)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
@@ -141,10 +131,10 @@ defaults:
   - scope:
       path:            hyde/
     values:
-      accent_color:    rgb(38,139,210)
-      theme_color:     rgb(32,32,32)
+      accent_color:    rgb(243, 95, 44)
+      theme_color:     rgb(1, 1, 9)
       accent_image:
-        background:    rgb(32,32,32)
+        background:    rgb(1, 1, 9)
         overlay:       false
 
   # Don't include documents in assets in the sitemap

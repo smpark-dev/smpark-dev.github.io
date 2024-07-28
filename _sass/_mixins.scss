@@ -14,8 +14,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @mixin light-mode() {
-  --body-color: #{$body-color};
-  --body-bg: #{$body-bg};
+  --body-color: #{$body-bg};
+  --body-bg: #010109;
   --border-color: #{$border-color};
   --gray: #{$gray};
   --gray-bg: #{$gray-bg};
