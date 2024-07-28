@@ -1,6 +1,3 @@
----
-# https://developer.mozilla.org/en-US/docs/Web/Manifest
----
 {
   {% if site.lang %}"lang": "{{ site.lang }}",{% endif %}
   "name": "{{ site.title }}",
@@ -13,6 +10,18 @@
   "display": "minimal-ui",
   "scope": "{{ '/' | relative_url }}",
   "icons": [
+    {
+      "src": "{{ 'assets/icons/icon-36x36.png' | relative_url }}",
+      "sizes": "36x36",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
+    {
+      "src": "{{ 'assets/icons/icon-48x48.png' | relative_url }}",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    },
     {
       "src": "{{ 'assets/icons/icon-72x72.png' | relative_url }}",
       "sizes": "72x72",

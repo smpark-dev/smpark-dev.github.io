@@ -1,2 +1,14 @@
 {% assign lang = include.lang | default:site.lang | default:'en' %}
 <link rel="alternate" href="{{ page.url | absolute_url }}" hreflang="{{ lang | downcase | replace:'_','-' }}">
+<!-- Favicons -->
+<link rel="shortcut icon" href="{{ '/assets/icons/favicon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/icon-36x36.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/icon-72x72.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/icons/icon-96x96.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/icon-192x192.png' | relative_url }}">
+
+<!-- PWA -->
+<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+<meta name="theme-color" content="{{ site.theme_color | default:site.accent_color | default:'rgb(8,46,57)' }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
