@@ -1,4 +1,5 @@
 {% if plugins contains 'jekyll-feed' %}{% include head/feed-tag.html %}{% endif %}
+
 <link rel="shortcut icon" href="{% if site.favicon %}{{ site.favicon | relative_url }}{% else %}{{ '/assets/icons/favicon.ico' | relative_url }}{% endif %}">
 <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/icon-72x72.png' | relative_url }}">
