@@ -7,7 +7,7 @@ sitemap: true
 image: /assets/img/sidebar-bg.jpg
 hide_last_modified: false
 tags: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
-keywords: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
+keywords: NX, Yarn Berry, PnP, 모노레포, TypeScript
 ---
 
 # <span style="color: #0066cc;">NX에서 Yarn Berry PnP 적용 시 패키지 문제 해결</span>
@@ -51,8 +51,8 @@ Yarn Berry의 제약 조건(constraints) 시스템을 사용하여 Prolog 스크
 
 1. root에 `constraints.pro` 파일 생성 및 코드 삽입:
 
-<pre style="padding: 10px; border-radius: 5px;">
-<code>% 공통 패키지 목록 정의
+<pre style="padding: 10px; border-radius: 5px; color: #f5f5f6; background-color: #2d2d3480;">
+% 공통 패키지 목록 정의
 common_packages(['typescript']).
 
 % 의존성 규칙 설정
@@ -75,15 +75,16 @@ gen_enforced_dependency(WorkspaceCwd, Package, Version, DependencyType) :-
   ),
   
   % 의존성 타입 설정 (예: devDependencies로 통일)
-  DependencyType = devDependencies.</code>
+  DependencyType = devDependencies.
 </pre>
 
+
 2. 터미널에 명령어 실행 
-<pre style="padding: 10px; border-radius: 5px;">
-<code>// constraints.pro 파일에 정의된 규칙에 위배되는 사항을 알린다.
+<pre style="padding: 10px; border-radius: 5px; color: #f5f5f6; background-color: #2d2d3480;">
+// constraints.pro 파일에 정의된 규칙에 위배되는 사항을 알린다.
 yarn constraints 
 // constraints.pro 파일에 정의된 규칙에 위배되는 사항을 고친다.
-yarn constraints --fix</code>
+yarn constraints --fix
 </pre>
 
 결과 `root/package.json`에 설치된 Typescript가 `sub/package.json`에도 같은 버전으로 

@@ -7,7 +7,7 @@ sitemap: true
 image: /assets/img/me@2x.jpg
 hide_last_modified: false
 tags: [Yarn Berry, PnP, Zero Install, Docker, Mac, Cross-Platform Development]
-keywords: [Yarn Berry, PnP, Zero Install, Docker, Mac, Cross-Platform Development]
+keywords: Yarn Berry, PnP, Zero Install, Docker, Mac, Cross-Platform Development
 ---
 
 # <span style="color: #0066cc;">Yarn Berry PnP Zero Install과 Docker 환경 동기화</span>
@@ -20,7 +20,7 @@ Yarn Berry PnP(Plug'n'Play)와 Zero Install을 활용한 백엔드 프로젝트�
 
 Docker 세팅을 마치고 컨테이너를 실행했을 때, 다음과 같은 에러 메시지가 출력되었습니다:
 
-```terminal
+<pre style="padding: 10px; border-radius: 5px; color: #f5f5f6; background-color: #2d2d3480;">
 oauth2.0-dev_1.0.0  | ! Corepack is about to download https://repo.yarnpkg.com/4.3.1/packages/yarnpkg-cli/bin/yarn.js
 oauth2.0-dev_1.0.0  | 
 oauth2.0-dev_1.0.0  | node:internal/modules/run_main:129
@@ -30,7 +30,7 @@ oauth2.0-dev_1.0.0  | Error: Required package missing from disk. If you keep you
 oauth2.0-dev_1.0.0  | 
 oauth2.0-dev_1.0.0  | Missing package: cross-env@npm:7.0.3
 oauth2.0-dev_1.0.0  | Expected package location: /usr/.yarn/berry/cache/cross-env-npm-7.0.3-96d81820f4-10c0.zip/node_modules/cross-env/
-```
+</pre>
 
 1. Corepack을 활성화하고 package.json에 Yarn 버전을 명시했기에 Corepack 관련 에러는 아니라고 가정
 2. cross-env@npm:7.0.3 해당 특정 패키지를(존재함에도) 찾지못하는 이유가 내가 제공한 로컬 Yarn 패키지가 아닌 글로벌 Yarn을 사용한다고 판단
@@ -42,22 +42,22 @@ oauth2.0-dev_1.0.0  | Expected package location: /usr/.yarn/berry/cache/cross-en
 
 글로벌 Yarn 사용을 막기 위해 .yarnrc.yml 파일에 다음 설정을 추가했습니다:
 
-```yaml
+<pre style="padding: 10px; border-radius: 5px; color: #f5f5f6; background-color: #2d2d3480;">
 enableGlobalCache: false
-```
+</pre>
 
 <br>
 
 
 글로벌 캐시를 비활성화한 후, 새로운 에러가 발생했습니다:
-```terminal
+<pre style="padding: 10px; border-radius: 5px; color: #f5f5f6; background-color: #2d2d3480;">
 oauth2.0-dev_1.0.0  | Error [TransformError]: The package "@esbuild/linux-arm64" could not be found, and is needed by esbuild.
 oauth2.0-dev_1.0.0  | 
 oauth2.0-dev_1.0.0  | If you are installing esbuild with npm, make sure that you don't specify the
 oauth2.0-dev_1.0.0  | "--no-optional" or "--omit=optional" flags. The "optionalDependencies" feature
 oauth2.0-dev_1.0.0  | of "package.json" is used by esbuild to install the correct binary executable
 oauth2.0-dev_1.0.0  | for your current platform.
-```
+</pre>
 
 1. @esbuild/linux-arm64를 찾지 못하는 이슈 발생
 2. 해당 패키지의 로컬 존재 여부 확인 (존재하지 않음)
@@ -71,16 +71,17 @@ Zero Install이 아닌 경우는 `yarn install` 명령어를 통해 의존성을
 
 Zero Install의 이점을 유지하면서 문제를 해결하기 위해, 로컬 환경에 Docker에서 필요한 운영체제용 패키지도 함께 설치하는 방법을 선택했습니다. `.yarnrc.yml` 파일에 다음 설정을 추가했습니다:
 
-```yaml
+<pre style="padding: 10px; border-radius: 5px; color: #f5f5f6; background-color: #2d2d3480;">
 enableGlobalCache: false
 supportedArchitectures:
   os: [darwin, linux]
   cpu: [arm64]
-```
+</pre>
 
-```terminal
+
+<pre style="padding: 10px; border-radius: 5px; color: #f5f5f6; background-color: #2d2d3480;">
 yarn install
-```
+</pre>
 
 이 설정으로 두 가지 운영체제(Mac, Linux) arm64 아키텍처에 따른 바이너리를 모두 로컬에 설치할 수 있게 되었습니다. `yarn install` 명령을 실행한 후, `.yarn/unplugged` 디렉토리에 Linux 바이너리가 설치된 것을 확인할 수 있었습니다.
 
