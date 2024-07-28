@@ -2,6 +2,12 @@
   <meta name="robots" content="noindex">
 {% endif %}
 
+{% if page.image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+{% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.defaults[0].values.image }}">
+{% endif %}
+
 {% unless page.redirect %}
   {% if plugins contains 'jekyll-seo-tag' %}
     {% include head/seo-tag.html %}
