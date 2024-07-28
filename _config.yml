@@ -127,6 +127,7 @@ font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 defaults:
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
+  image:           /assets/img/me@2x.jpg
   - scope:
       path:            hyde/
     values:
@@ -148,10 +149,6 @@ defaults:
       layout:          plain
       sitemap:         false
 
-  - scope:
-      path:            ""
-    values:
-      og_image:           /assets/img/me@2x.jpg
   # # You can use the following to enable comments on all posts.
   - scope:
       type:            posts
