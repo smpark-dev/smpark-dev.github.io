@@ -2,10 +2,10 @@
   <meta name="robots" content="noindex">
 {% endif %}
 
-{% if page.og_image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.og_image }}">
-{% else %}
+{% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ site.defaults[0].values.og_image }}">
+{% else %}
+  <meta property="og:image" content="{{ site.url }}{{ page.og_image }}">
 {% endif %}
 
 {% unless page.redirect %}
