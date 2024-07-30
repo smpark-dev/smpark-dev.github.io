@@ -1,14 +1,129 @@
-.dl-table {
-  a {
-    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
-      text-underline-offset: .8rem;
-    }
-    @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
-      padding-bottom: .45rem;
-    }
+// applause-button
+
+applause-button {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+  .count-container {
+    color: inherit;
+  }
+}
+
+.clap-count {
+  @extend h4;
+  color: var(--accent-color);
+  display: none;
+
+  svg {
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
   }
 
-  .btn, .gumroad-button  {
-    margin: 1rem 0;
+  .flat {
+    fill: var(--body-bg);
   }
+
+  .outline {
+    fill: var(--accent-color);
+  }
+}
+
+//menu
+
+
+.submenu-list {
+  list-style-type:square;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.submenu-list li {
+  margin: 30px 0;
+}
+
+.submenu-list a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+
+
+.submenu-list a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0;
+  // transition: opacity 0.1s ease-in-out;
+}
+
+.submenu-list a:hover::after {
+  opacity: 1;
+}
+
+//sidebar
+
+.sidebar-sticky {
+  height: 100%;
+  padding-top: 5%;
+  position: absolute;
+}
+.sidebar-about {
+  padding-bottom:10%;
+}
+.spread-btn{
+  left: 7%;
+  position: absolute;
+  padding: 0;
+  padding-top: 5px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.spread-btn:hover{
+  color: grey;
+}
+
+.menu-wrapper{
+  display: flex;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 0%;
+
+  input[type=checkbox]{
+    display: none;
+  }
+
+  input[type=checkbox] ~ ul{
+    display: none;
+    list-style: none;
+  }
+
+  input[type=checkbox]:checked ~ ul{
+    display: block;
+  }
+}
+
+
+
+// Image centering
+
+.text-align-center {
+  text-align: center;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

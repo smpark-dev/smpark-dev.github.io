@@ -19,8 +19,7 @@ layout: page
 
 {{ content }}
 
-{% assign categories = page.slug | split: '/' %}
-{% assign selected_posts = site.posts | where_exp: "post", "post.categories contains categories.last" %}
+{% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
 
 {% assign date_formats  = site.data.strings.date_formats               %}
 {% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
@@ -28,7 +27,7 @@ layout: page
 
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<ul class="related-posts">{% endif %}
-{% for post in selected_posts %}
+{% for post in posts %}
   {% assign current_date = post.date | date:list_group_by %}
   {% unless page.no_groups %}{% if current_date != prev_date %}
     {% unless forloop.first %}</ul>{% endunless %}

@@ -41,33 +41,41 @@ logo:                  /assets/img/logo.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <sangmin> <park>
-  email:               <smpark7723@gmail.com>
+  name:                Sangmin Park
+  email:               smpark7723@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             Index
-    url:               /index/
+  - title: Index
+    url: /index/
 
-  - title:             
-    url:               /
+  - title: Dev
+    url: /dev/
+    submenu: 
+      - title: Design
+        url: /dev/design/
+      - title: Tools
+        url: /dev/tools/
+      - title: Programming
+        url: /dev/programming/
+      - title: Infra
+        url: /dev/infra/   
 
-  - title:             Dev
-    url:               /dev/
-  - title:             Debug
-    url:               /debug/
-  - title:             Knowledge
-    url:               /knowledge/
+  - title: Knowledge
+    url: /knowledge/
+    submenu: 
+      - title: ComputerScience
+        url: /knowledge/computer-science/
+      - title: Algorithms
+        url: /knowledge/algorithms/
 
-  - title:             
-    url:               /
-    
-  - title:             About
-    url:               /about/
-  - title:             Website
-    url:               /
+  - title: About
+    url: /about/
+
+  - title: Website
+    url: /
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -83,7 +91,7 @@ menu:
 copyright:             © 2024. All rights reserved.
 
 # Format of the permalinks
-permalink:             /:categories/:year-:month-:day-:title/
+permalink:             /:categories/:year-:month-:day-:title:output_ext
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
@@ -305,7 +313,7 @@ hydejack:
 
 collections:
   featured_categories:
-    permalink:         /:name/
+    permalink:         /:path/
     output:            true
 
   featured_tags:
@@ -315,6 +323,7 @@ collections:
   projects:
     permalink:         /projects/:path/
     output:            true
+
 
 
 # File inclusion/exclusion
@@ -354,7 +363,7 @@ plugins:
 # ---------------------------------------------------------------------------------------
 
 # Where you proof that you own this site (used by jekyll-seo-tag)
-# google_site_verification: <verification-id>
+# google_site_verification: _wopBiiFGWGTYZWbUJKPz0dLHk_r52760jimlyw9R4E
 # -- or --
 # webmaster_verifications:
 #   google:              <verification-id>

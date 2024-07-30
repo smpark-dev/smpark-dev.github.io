@@ -1,0 +1,21 @@
+---
+layout: about
+---
+
+{% assign page_slug = page.slug | split: '/' %}
+{% assign current_category = page_slug.first | default: page.slug | downcase %}
+
+<h2 class="submenu-title">{{ current_category }} /</h2>
+
+<ul class="submenu-list">
+  {% assign current_page = page.slug | downcase %}
+  {% for item in site.menu %}
+    {% if item.url contains current_page %}
+      {% if item.submenu %}
+        {% for subitem in item.submenu %}
+          <li><a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a></li>
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>

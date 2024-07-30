@@ -8,6 +8,7 @@ image: /assets/img/sidebar-bg.jpg
 hide_last_modified: false
 tags: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
 keywords: NX, Yarn Berry, PnP, 모노레포, TypeScript
+categories: [dev, tools]
 ---
 
 # <span style="color: #0066cc;">NX에서 Yarn Berry PnP 적용 시 패키지 문제 해결</span>
