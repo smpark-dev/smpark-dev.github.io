@@ -1,0 +1,3 @@
+[submodule "apps/smpark-dev.github.io"]
+	path = apps/smpark-dev.github.io
+	url = https://github.com/smpark-dev/smpark-dev.github.io.git
