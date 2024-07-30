@@ -127,3 +127,53 @@ img.centered {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+// navbar
+@media screen and (min-width: 1023px) {
+  #logo-container {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1663px) {
+  #nav-underline {
+    width: calc(100% + 50vw - 32rem) !important;
+  }
+}
+
+#logo-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#logo-container > .logo > img {
+  width: 6rem;
+  height: 6rem;
+  transform: translateY(-5px);
+}
+
+#nav-underline {
+  width: 100%;  /* 실선의 길이 */
+  height: 2px;  /* 실선의 두께 */
+  background-color: rgba(255, 255, 255, 0.3);/* 실선의 색상 (여기서는 흰색) */
+  margin: 0 auto;  /* 위아래 여백과 가운데 정렬 */
+}
+
+.nav-btn-bar {
+  @extend .color-transition;
+  margin: 0 -1rem;
+  background-color: white; // IE11
+  background-color: var(--body-bg);
+  height: $navbar-height;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+
+  > :first-child, > :last-child {
+    border: none;
+  }
+}
