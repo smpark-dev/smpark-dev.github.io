@@ -233,3 +233,12 @@ img.centered {
   margin-right: -1rem;
   height: 7rem !important;
 }
+
+
+.sidebar-about {
+  > a.sidebar-title {
+    > h2 {
+      color:  #bb86fc;
+    }
+  }
+}
