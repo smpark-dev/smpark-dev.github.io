@@ -1,10 +1,11 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
 title: About me
 description: >
   Web Developer smpark 입니다.
 hide_description: false
+slug: about
+categories: [about]
 
 ---
 
