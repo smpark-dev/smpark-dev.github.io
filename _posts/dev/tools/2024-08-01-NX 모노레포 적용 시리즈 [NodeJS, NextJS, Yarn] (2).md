@@ -37,7 +37,6 @@ NX 모노레포, 줄여서 NX는 2가지 적용 방법을 제공합니다.
 
 ### 1) <span style="color: skyblue;">NX WorkSpace 생성</span>
   
-
 #### (1) NX WorkSpace 최초 생성
 
   ```bash
@@ -143,7 +142,7 @@ NX 모노레포, 줄여서 NX는 2가지 적용 방법을 제공합니다.
 
   ---
     
-    
+
   - 위의 3가지 중 자신에게 맞는 방식을 채택하시면 됩니다. 저는 FrontEnd, BackEnd 프로젝트가 섞여있기 때문에 통합형을 선택했습니다.
 
   `NX 생성 옵션 3`
