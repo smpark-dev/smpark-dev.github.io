@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NX 모노레포 적용 시리즈[NodeJS, NextJS, Yarn](1)
+title: NX 모노레포 적용 시리즈 [NodeJS, NextJS, Yarn] (1)
 description: >
   NX 모노레포의 9가지 강력한 이점과 그 예시를 코드로 나타낸 포스팅
 sitemap: true
