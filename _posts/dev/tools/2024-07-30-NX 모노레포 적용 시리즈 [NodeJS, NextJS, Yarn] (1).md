@@ -16,7 +16,7 @@ categories: [dev, tools]
 
 NX 모노레포는 현대적인 웹 개발에서 점점 더 중요해지고 있습니다. 이 강력한 도구가 제공하는 주요 이점을 먼저 살펴보고 이를 실제로 제 개인 프로젝트에 적용해보는 포스팅 입니다. 최대한 쉽게 설명하기 위해 노력하겠습니다.
 
-<h2>1. <span style="color: #bb86fc;"> 🔄 코드 재사용성 향상</span></h2>
+## 1. <span style="color: #bb86fc;">🔄 코드 재사용성 향상</span>
 
 - 공통 컴포넌트와 유틸리티를 쉽게 공유
 - 중복 코드 감소 및 일관성 유지
@@ -36,7 +36,7 @@ export default function Home() {
   return <Button onClick={() => console.log('Clicked!')}>Click me</Button>}
 ```
 
-<h2>2. <span style="color: #bb86fc;"> 🛠 일관된 개발 환경</span></h2>
+## 2. <span style="color: #bb86fc;"> 🛠 일관된 개발 환경</span>
 
 - 모든 프로젝트에 동일한 린팅 및 포맷팅 규칙 적용
 - 통합된 CI/CD 파이프라인으로 일관된 프로세스 유지
@@ -52,7 +52,7 @@ export default function Home() {
 }
 ```
 
-<h2>3. <span style="color: #bb86fc;"> 📦 의존성 관리 간소화</span></h2>
+## 3. <span style="color: #bb86fc;"> 📦 의존성 관리 간소화</span>
 
 - 루트 레벨에서 의존성 중앙 관리
 - 내부 패키지 간 의존성 관리 용이
@@ -71,7 +71,7 @@ export default function Home() {
 }
 ```
 
-<h2>4. <span style="color: #bb86fc;"> ⚡ 빌드 및 테스트 최적화</span></h2>
+## 4. <span style="color: #bb86fc;"> ⚡ 빌드 및 테스트 최적화</span>
 
 - 변경된 부분만 선택적으로 빌드 및 테스트
 - 캐싱을 통한 빌드 시간 대폭 감소
@@ -81,7 +81,7 @@ nx affected:build
 nx affected:test
 ```
 
-<h2>5. <span style="color: #bb86fc;"> 📈 스케일링 용이성</span></h2>
+## 5. <span style="color: #bb86fc;"> 📈 스케일링 용이성</span>
 
 - <code style="background-color: #2e2e2e; color: #03dac6; padding: 2px 4px; border-radius: 3px;">nx generate</code> 명령어로 새 프로젝트 쉽게 추가
 - 일관된 구조로 신규 팀원 온보딩 간소화
@@ -91,7 +91,7 @@ nx g @nx/react:lib my-new-lib
 nx g @nx/next:app my-new-app
 ```
 
-<h2>6. <span style="color: #bb86fc;"> 👥 협업 개선</span></h2>
+## 6. <span style="color: #bb86fc;"> 👥 협업 개선</span>
 
 - 단일 저장소로 코드 리뷰 및 변경 사항 추적 용이
 - 프로젝트 간 관계 시각화로 아키텍처 이해도 향상
@@ -100,7 +100,7 @@ nx g @nx/next:app my-new-app
 nx graph
 ```
 
-<h2>7. <span style="color: #bb86fc;"> 🏷 버전 관리 및 릴리스 프로세스</span></h2>
+## 7. <span style="color: #bb86fc;"> 🏷 버전 관리 및 릴리스 프로세스</span>
 
 - 모든 프로젝트 버전 일괄 관리
 - Lerna 등 도구로 릴리스 프로세스 자동화
@@ -115,7 +115,7 @@ nx graph
 }
 ```
 
- <h2>8. <span style="color: #bb86fc;"> 🚀 성능 최적화</span></h2>
+## 8. <span style="color: #bb86fc;"> 🚀 성능 최적화</span>
 
 - 계산 캐싱으로 반복 작업 시간 단축
 - 증분 빌드로 전체 빌드 시간 감소
@@ -134,7 +134,7 @@ nx graph
 }
 ```
 
-<h2>9. <span style="color: #bb86fc;"> 🖥 마이크로 프론트엔드 지원</span></h2>
+## 9. <span style="color: #bb86fc;"> 🖥 마이크로 프론트엔드 지원</span>
 
 - 마이크로 프론트엔드 아키텍처 쉽게 구현
 - 독립적인 프로젝트 관리와 동시에 코드 공유 가능
