@@ -11,7 +11,6 @@ keywords: NX, MonoRepo, Yarn, NodeJS, NextJS, GitHub, 모노레포
 categories: [dev, tools]
 ---
 
-<div style="background-color: #1e1e1e; color: #e0e0e0; padding: 20px; border-radius: 5px;">
 <h1 style="color: #bb86fc; margin-top: 10px;">NX 모노레포의 9가지 강력한 이점</h1>
 
 NX 모노레포는 현대적인 웹 개발에서 점점 더 중요해지고 있습니다. 이 강력한 도구가 제공하는 주요 이점을 먼저 살펴보고 이를 실제로 제 개인 프로젝트에 적용해보는 포스팅 입니다. 최대한 쉽게 설명하기 위해 노력하겠습니다.
@@ -21,7 +20,7 @@ NX 모노레포는 현대적인 웹 개발에서 점점 더 중요해지고 있�
 - 공통 컴포넌트와 유틸리티를 쉽게 공유
 - 중복 코드 감소 및 일관성 유지
 
-```tsx
+```jsx
 // libs/shared/ui/src/lib/button.tsx
 import React from 'react';
 
@@ -33,7 +32,10 @@ export const Button = ({ children, onClick }) => (
 import { Button } from '@myorg/shared/ui';
 
 export default function Home() {
-  return <Button onClick={() => console.log('Clicked!')}>Click me</Button>;
+  return (
+    <Button onClick={() => console.log('Clicked!')}>Click me</Button>
+  );
+}
 ```
 
 ## 2. <span style="color: #bb86fc;"> 🛠 일관된 개발 환경</span>
@@ -139,7 +141,7 @@ nx graph
 - 마이크로 프론트엔드 아키텍처 쉽게 구현
 - 독립적인 프로젝트 관리와 동시에 코드 공유 가능
 
-```tsx
+```jsx
 // apps/host/src/app/app.tsx
 import { loadRemoteModule } from '@nx/react/mf';
 import React from 'react';

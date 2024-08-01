@@ -11,7 +11,7 @@ keywords: NX, MonoRepo, Yarn, NodeJS, NextJS, GitHub, 모노레포
 categories: [dev, tools]
 ---
 
-# <span style="color: skyblue;">NX 모노레포 적용 시리즈 \[NodeJS, NextJS, Yarn\](2)</span>
+# <span style="color: skyblue;">NX 모노레포 적용 시리즈 \[NodeJS, NextJS, Yarn\] (2)</span>
 
 ## 0. 사전 준비 및 NX 설치
 
