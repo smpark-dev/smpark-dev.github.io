@@ -36,6 +36,7 @@ npm install -g nx@latest
 NX 모노레포, 줄여서 NX는 2가지 적용 방법을 제공합니다.
 
 ### 1) <span style="color: skyblue;">NX WorkSpace 생성</span>
+<br/>
 
 #### (1) NX WorkSpace 최초 생성
 
@@ -139,13 +140,16 @@ NX 모노레포, 줄여서 NX는 2가지 적용 방법을 제공합니다.
 
   - 단일 애플리케이션이나 라이브러리 프로젝트에 NX의 빌드 최적화, 캐싱, 코드 생성 등의 기능을 활용하고 싶을 때 적합합니다.
 
-  > 위의 3가지 중 자신에게 맞는 방식을 채택하시면 됩니다. 저는 FrontEnd, BackEnd 프로젝트가 섞여있기 때문에 통합형을 선택했습니다.
+  ---
+
+
+  - 위의 3가지 중 자신에게 맞는 방식을 채택하시면 됩니다. 저는 FrontEnd, BackEnd 프로젝트가 섞여있기 때문에 통합형을 선택했습니다.
 
   `NX 생성 옵션 3`
 
   ![NX 설치 과정 3](/assets/img/blog/nx-install3.png)
 
-  > 마지막으로 사용하실 CI 도구를 선택하시면 됩니다. 저는 GitHub에 프로젝트를 올리고 배포할 예정이기에 GitHub Actions를 선택했습니다.
+  - 마지막으로 사용하실 CI 도구를 선택하시면 됩니다. 저는 GitHub에 프로젝트를 올리고 배포할 예정이기에 GitHub Actions를 선택했습니다.
 
 <br/>
 <br/>
