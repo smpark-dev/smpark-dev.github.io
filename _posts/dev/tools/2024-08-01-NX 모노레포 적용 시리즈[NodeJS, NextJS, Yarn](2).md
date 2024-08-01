@@ -39,23 +39,23 @@ NX 모노레포, 줄여서 NX는 2가지 적용 방법을 제공합니다.
 
 #### (1) NX WorkSpace 최초 생성
 
-```bash
-  # terminal
-  npx create-nx-workspace
-```
+  ```bash
+    # terminal
+    npx create-nx-workspace
+  ```
 
 #### (2) 기존 WorkSpace<span style="font-size:11px">(프로젝트)</span> NX 추가
 
-```bash
-  # terminal
-  npx nx init
-```
+  ```bash
+    # terminal
+    npx nx init
+  ```
 
 저는 가지고 있는 다양한 기술 스택의 개인 프로젝트들을 하나의 모노레포 워크스페이스에 넣어서 관리하기 위해 1번 방식을 채택하였습니다.
 
 ### 2) <span style="color: skyblue;">NX WorkSpace 생성 옵션</span>
 
-NX 생성 옵션 1
+`NX 생성 옵션 1`
 
 ![NX 생성 과정 1](/assets/img/blog/nx-install1.png)
 
@@ -64,7 +64,7 @@ NX 생성 옵션 1
   다양한 기술 스택의 프로젝트를 관리할 예정이기 때문에 None을 선택했습니다.
 
  <br/>
-NX 생성 옵션 2
+`NX 생성 옵션 2`
 
 ![NX 생성 과정 2](/assets/img/blog/nx-install2.png)
 
@@ -72,13 +72,12 @@ NX 생성 옵션 2
 
   #### 1) <span style="color: skyblue;">패키지 기반(package-based)</span>
 
+
   특징:
 
   - 각 프로젝트가 독립적인 npm 패키지로 취급됩니다.
   - 각 프로젝트는 자체 package.json 파일을 가집니다.
   - 프로젝트 간 의존성은 npm 패키지처럼 관리됩니다.
-
-  <br/>
 
   ```tree
   my-workspace/
@@ -99,14 +98,13 @@ NX 생성 옵션 2
 
   #### 2) <span style="color: skyblue;">통합(integrated)</span>
 
+
   특징:
 
   - 모든 프로젝트가 단일 리포지토리에서 관리됩니다.
   - 루트 레벨의 단일 package.json 파일을 사용합니다.
   - 프로젝트 간 의존성이 내부적으로 관리됩니다.
-  
-  <br/>
-  
+
   ```tree
   my-workspace/
   ├── package.json
@@ -125,13 +123,12 @@ NX 생성 옵션 2
 
   #### 3) <span style="color: skyblue;">독립형(standalone)</span>
 
+
   특징:
 
   - 단일 프로젝트에 NX의 기능을 적용합니다.
   - 기존 프로젝트를 NX로 마이그레이션하기 쉽습니다.
   - 프로젝트 구조가 가장 단순합니다.
-
-    <br/>
 
   ```tree
   my-project/
@@ -142,20 +139,16 @@ NX 생성 옵션 2
   ```
 
   사용 사례:
-  
+
   - 단일 애플리케이션이나 라이브러리 프로젝트에 NX의 빌드 최적화, 캐싱, 코드 생성 등의 기능을 활용하고 싶을 때 적합합니다.
 
-
-
-  
   > 위의 3가지 중 자신에게 맞는 방식을 채택하시면 됩니다. 저는 FrontEnd, BackEnd 프로젝트가 섞여있기 때문에 통합형을 선택했습니다.
 
-  NX 생성 옵션 2
+  `NX 생성 옵션 3`
 
-  ![NX 설치 과정 3](assets/img/blog/nx-install3.png)
+  ![NX 설치 과정 3](/assets/img/blog/nx-install3.png)
 
   > 마지막으로 사용하실 CI 도구를 선택하시면 됩니다. 저는 GitHub에 프로젝트를 올리고 배포할 예정이기에 GitHub Actions를 선택했습니다.
-
 
 <br/>
 <br/>
