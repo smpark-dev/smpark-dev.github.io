@@ -33,7 +33,7 @@ export const Button = ({ children, onClick }) => (
 import { Button } from '@myorg/shared/ui';
 
 export default function Home() {
-  return <Button onClick={() => console.log('Clicked!')}>Click me</Button>}
+  return <Button onClick={() => console.log('Clicked!')}>Click me</Button>;
 ```
 
 ## 2. <span style="color: #bb86fc;"> 🛠 일관된 개발 환경</span>
