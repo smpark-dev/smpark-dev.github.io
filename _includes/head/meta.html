@@ -1,5 +1,7 @@
 {% if page.noindex or page.no_index or page.sitemap == false %}
   <meta name="robots" content="noindex">
+{% else %}
+  <meta name="robots" content="index,follow">
 {% endif %}
 
 {% if page.image %}
