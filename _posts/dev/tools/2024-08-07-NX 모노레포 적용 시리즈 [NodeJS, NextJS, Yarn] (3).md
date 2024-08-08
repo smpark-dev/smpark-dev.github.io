@@ -11,7 +11,7 @@ keywords: NX, MonoRepo, Yarn, NodeJS, NextJS, GitHub, 모노레포, PnP
 categories: [dev, tools]
 ---
 
-# NX 모노레포 적용 시리즈 [NodeJS, NextJS, Yarn, PnP] (3)
+# NX 모노레포 적용 시리즈 [NodeJS, NextJS, Yarn] (3)
 
 ## 📚 목차
 
