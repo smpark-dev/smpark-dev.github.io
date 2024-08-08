@@ -2,7 +2,7 @@
 layout: post
 title: NX에서 yarn berry pnp, node-modules 적용 시 발생하는 문제와 해결방법
 description: >
-   NX에서 yarn berry pnp, node-modules 적용 시 발생하는 문제와 해결방법 담을 포스팅
+   NX에서 yarn berry pnp, node-modules 적용 시 발생하는 문제와 해결방법 담은 포스팅
 sitemap: true
 image: /assets/img/sidebar-bg1.jpg
 hide_last_modified: false
