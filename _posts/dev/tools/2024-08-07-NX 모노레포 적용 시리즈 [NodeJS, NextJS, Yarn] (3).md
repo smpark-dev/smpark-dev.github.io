@@ -137,7 +137,7 @@ yarn install
 }
 ```
 
-> dev` CLI로 접근할 거고 커맨트를 통해 실행 합니다. 각각의 파일에 접근하기 위해 apps/smpark_oauth2.0/ 경로를 적용하려는 파일 앞에 추가 작성하였습니다.
+> `dev` CLI로 접근 후 command를 실행 합니다. 각각의 파일에 접근하기 위해 apps/smpark_oauth2.0/ 경로를 적용하려는 파일 앞에 추가 작성하였습니다.
 
 🖥️ NX CLI로 실행하기:
 
