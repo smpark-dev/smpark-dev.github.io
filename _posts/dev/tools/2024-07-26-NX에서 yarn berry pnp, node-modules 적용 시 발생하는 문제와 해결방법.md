@@ -4,7 +4,7 @@ title: NX에서 yarn berry pnp, node-modules 적용 시 발생하는 문제와 �
 description: >
    NX에서 yarn berry pnp, node-modules 적용 시 발생하는 문제와 해결방법 담은 포스팅
 sitemap: true
-image: /assets/img/sidebar-bg1.jpg
+image: /assets/img/sidebar-bg0.jpg
 hide_last_modified: false
 tags: [NX, Yarn Berry, PnP, 모노레포, TypeScript]
 keywords: NX, Yarn Berry, PnP, 모노레포, TypeScript

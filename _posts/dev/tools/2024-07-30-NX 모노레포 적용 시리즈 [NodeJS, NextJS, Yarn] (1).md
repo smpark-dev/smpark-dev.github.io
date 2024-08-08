@@ -4,7 +4,7 @@ title: NX 모노레포 적용 시리즈 [NodeJS, NextJS, Yarn] (1)
 description: >
   NX 모노레포의 9가지 강력한 이점과 그 예시를 코드로 나타낸 포스팅
 sitemap: true
-image: /assets/img/sidebar-bg2.jpg
+image: /assets/img/sidebar-bg1.jpg
 hide_last_modified: false
 tags: [NX, MonoRepo, Yarn, NodeJS, NextJS, GitHub]
 keywords: NX, MonoRepo, Yarn, NodeJS, NextJS, GitHub, 모노레포
