@@ -2,7 +2,7 @@
 layout: post
 title: NX에서 yarn berry pnp, node-modules 적용 시 발생하는 문제와 해결방법
 description: >
-  NX 모노레포를 적용하는 과정에서 node-modules가 아닌 pnp를 적용시 패키지가 호이스팅 되지 않아 생긴 문제를 해결하는 포스팅
+   NX에서 yarn berry pnp, node-modules 적용 시 발생하는 문제와 해결방법 담을 포스팅
 sitemap: true
 image: /assets/img/sidebar-bg1.jpg
 hide_last_modified: false
@@ -40,7 +40,7 @@ NX 모노레포를 도입하면서 기존 프로젝트를 마이그레이션하�
 
 > <small style="background-color: #E3F2FD; padding: 2px 5px; border-radius: 3px;">유령 의존성이란</small>
 >
-> - **<span style="color: #FF5722;">package.json에 명시되지 않은 패키지를 사용할 수 있게 되는 문제</span>**
+> - package.json에 명시되지 않은 패키지를 사용할 수 있게 되는 문제
 
 ## <span style="color: #1976D2;">PnP(Plug'n'Play)의 특징</span>
 
