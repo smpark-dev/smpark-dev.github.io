@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NX 모노레포 적용 시리즈 [NodeJS, NextJS, Yarn, PnP] (3)
+title: NX 모노레포 적용 시리즈 [NodeJS, NextJS, Yarn] (3)
 description: >
   NX 모노레포의 기본 세팅 방법(NodeJS)을 소개하는 포스팅입니다.
 sitemap: true
