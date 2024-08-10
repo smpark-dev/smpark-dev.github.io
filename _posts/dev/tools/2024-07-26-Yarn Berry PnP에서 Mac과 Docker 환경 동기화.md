@@ -93,7 +93,7 @@ yarn install
 
 ## <span style="color: #268BD2;">주의사항</span>
 
-<span style="color: #FF5722;">enableGlobalCache</span>를 <span style="color: #FF5722;">true</span>로 설정</span>하면, 추가적인 패키지 지원 설정에도 불구하고 오류가 발생할 수 있습니다. 이는 <span style="color: #2196F3;">일부 패키지가 특정 환경에서 완전히 지원하지 않을 수도  있기 때문</span>입니다.
+<span style="color: #FF5722;">enableGlobalCache</span>를 <span style="color: #FF5722;">true</span>로 설정하면, 추가적인 패키지 지원 설정에도 불구하고 오류가 발생할 수 있습니다. 이는 <span style="color: #2196F3;">일부 패키지가 특정 환경에서 완전히 지원하지 않을 수도  있기 때문</span>입니다.
 
 ## <span style="color: #268BD2;">결론</span>
 
