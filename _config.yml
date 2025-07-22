@@ -61,7 +61,9 @@ menu:
       - title: Programming
         url: /dev/programming/
       - title: Infra
-        url: /dev/infra/   
+        url: /dev/infra/
+      - title: BugFix
+        url: /dev/bugfix/
 
   - title: Knowledge
     url: /knowledge/
