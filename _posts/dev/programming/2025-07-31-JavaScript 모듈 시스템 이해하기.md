@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "JavaScript 모듈 시스템: import와 export 이해하기"
-subtitle: "ES6 모듈 시스템의 핵심 개념과 실무 활용법"
-category: dev
+description: "ES6 모듈 시스템의 핵심 개념과 실무 활용법"
+sitemap: true
+image: /assets/img/sidebar-bg3.jpg
+hide_last_modified: false
 tags: [programming, javascript, module, es6]
-image:
-  path: /assets/img/blog/javascript-modules.png
+keywords: programming, javascript, module, es6
+categories: [dev, programming]
 ---
 
 JavaScript 모듈 시스템은 코드를 구조화하고 재사용 가능하게 만드는 강력한 도구입니다. `import`와 `export` 키워드를 사용하여 모듈 간 기능을 공유하고, 대규모 애플리케이션을 효율적으로 관리할 수 있습니다.

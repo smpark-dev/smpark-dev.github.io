@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "TypeScript 환경에서 tsx CLI와 ESLint import/resolver 이해하기"
-subtitle: "경로 별칭 해석 문제를 해결하는 두 가지 접근법"
-category: dev
+description: "경로 별칭 해석 문제를 해결하는 두 가지 접근법"
+sitemap: true
+image: /assets/img/sidebar-bg4.jpg
+hide_last_modified: false
 tags: [tools, typescript, tsx, eslint, module-resolution]
-image:
-  path: /assets/img/blog/tsx-eslint-resolver.png
+keywords: tools, typescript, tsx, eslint, module-resolution
+categories: [dev, tools]
 ---
 
 TypeScript 프로젝트를 개발하다 보면 경로 별칭(path aliases)과 모듈 해석에서 복잡한 문제들을 마주하게 됩니다. 특히 ESM 환경에서 TypeScript의 경로 별칭이 제대로 작동하지 않거나, ESLint에서 모듈을 찾지 못하는 상황이 발생하죠. 이번 글에서는 tsx CLI와 ESLint의 import/resolver 설정을 통해 이런 문제들을 어떻게 해결할 수 있는지 자세히 알아보겠습니다.

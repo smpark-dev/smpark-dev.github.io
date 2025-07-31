@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "TypeScript Record, satisfies, as const 이해하기"
-subtitle: "타입 안전성과 정확한 추론을 위한 현대적 TypeScript 패턴"
-category: dev
+description: "타입 안전성과 정확한 추론을 위한 현대적 TypeScript 패턴"
+sitemap: true
+image: /assets/img/sidebar-bg1.jpg
+hide_last_modified: false
 tags: [programming, typescript, type-safety]
-image:
-  path: /assets/img/blog/typescript-patterns.png
+keywords: programming, typescript, type-safety
+categories: [dev, programming]
 ---
 
 TypeScript로 객체를 정의할 때 타입 안전성과 정확한 타입 추론 사이에서 고민해본 적이 있나요? 오늘은 `Record`, `satisfies`, `as const`의 조합을 통해 이 문제를 완벽하게 해결하는 방법을 알아보겠습니다.
