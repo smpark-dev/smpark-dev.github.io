@@ -384,4 +384,3 @@ DEBUG=eslint-import-resolver-typescript npx eslint src/index.ts
 tsx CLI와 ESLint의 import/resolver 설정은 각각 런타임과 정적 분석 단계에서 TypeScript의 경로 별칭 문제를 해결하는 방법입니다. 두 도구를 함께 사용하면 TypeScript 프로젝트에서 비교적 일관된 모듈 해석을 경험할 수 있습니다.
 
 이런 설정들이 처음에는 복잡해 보일 수 있지만, 한 번 제대로 구성해 놓으면 코드 가독성을 높이고 에러를 미리 방지하는 데 도움이 됩니다. 특히 다인 프로젝트나 팀 개발에서는 이런 도구들이 더 유용할 수 있습니다.
-
